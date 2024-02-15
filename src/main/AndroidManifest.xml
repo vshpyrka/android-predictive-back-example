@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- android:enableOnBackInvokedCallback="true" is used to enable Predictive Back Navigation -->
+
+    <application
+        android:enableOnBackInvokedCallback="true"
+        android:theme="@style/Theme.AppCompat">
+
+        <activity
+            android:name="com.example.predictive_back.PredictiveBackNavigationActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
