@@ -16,11 +16,8 @@
 
         <action
             android:id="@+id/to_predictiveBackNavigationTransitionFragment"
-            app:destination="@id/predictiveBackNavigationTransitionFragment"
-            app:enterAnim="@animator/nav_default_enter_anim"
-            app:exitAnim="@animator/nav_default_exit_anim"
-            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
-            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+            app:destination="@id/predictiveBackNavigationTransitionFragmentOne" />
+
     </fragment>
 
     <fragment
@@ -29,9 +26,22 @@
         tools:layout="@layout/fragment_predictive_back_view_transition" />
 
     <fragment
-        android:id="@+id/predictiveBackNavigationTransitionFragment"
-        android:name="com.example.predictive_back.PredictiveBackNavigationTransitionFragment"
-        tools:layout="@layout/fragment_predictive_back_navigation_transition" />
+        android:id="@+id/predictiveBackNavigationTransitionFragmentOne"
+        android:name="com.example.predictive_back.PredictiveBackNavigationTransitionFragmentOne"
+        tools:layout="@layout/fragment_predictive_back_navigation_transition_one">
 
+        <action
+            android:id="@+id/to_predictiveBackNavigationTransitionFragmentTwo"
+            app:destination="@id/predictiveBackNavigationTransitionFragmentTwo"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/predictiveBackNavigationTransitionFragmentTwo"
+        android:name="com.example.predictive_back.PredictiveBackNavigationTransitionFragmentTwo"
+        tools:layout="@layout/fragment_predictive_back_navigation_transition_two" />
 
 </navigation>
